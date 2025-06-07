@@ -47,18 +47,19 @@ main {
 }
 .menu-links a:hover {
     transform: scale(1.1);
-    background-color: black;
-    color: white;
-    border-radius: 5px;
 }
 /* ==== HEADER SECTION ==== */
 
 /* ==== SECTION ABOUT-ME ==== */
+.container-main {
+    position: relative;
+
+}
 .about-me {
     padding: 30px;
 }
 .about-me h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     padding: 10px;
     padding-top: 100px;
 }
@@ -66,9 +67,36 @@ main {
     padding: 0px;
     max-width: 400px;
     padding-left: 15px;
+    font-size: 1em;
+}
+.about-button a {
+    display: inline-block;
+    background-color: black;
+    font-size: 1.3em;
+    padding: 15px;
+    margin: 40px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.about-button a:hover {
+    transform: scale(1.1);
+}
+.github-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; 
+  max-width: 100%;
 }
 
-@media (orientation:portrait) {
+.github-link img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+
+@media (max-width:570px) {
   .menu-links a {
     display: none;
   }
