@@ -10,6 +10,7 @@
 }
 html, body {
     width: 100%;
+    scroll-behavior: smooth;
 }
 header {
     padding: 5px;
@@ -95,6 +96,52 @@ main {
   max-width: 100%;
 }
 
+/* ==== SECTION ABOUT-ME ==== */
+
+/* ==== SECTION PROJECTS ==== */
+
+.container-projects {
+    text-align: center;
+
+
+}
+.container-projects a {
+    text-decoration: none;
+    color: black;
+
+}
+.projects {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    text-align: center;
+    
+}
+.projects-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.projects-menu img {
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 25px;
+}
+.projects-menu p {
+    padding-bottom: 40px;
+}
+.container-projects h2 {
+    font-size: 2em;
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
 
 @media (max-width:570px) {
   .menu-links a {
@@ -102,5 +149,34 @@ main {
   }
   .menu-links a.emphasis-button {
     display: inline-block;
+  }
+  .about-me {
+    padding: 0px;
+  }
+  .about-me h1 {
+    font-size: 2em;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+  }
+  .about-me p {
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 1em;
+  }
+  .about-button {
+    padding: 0px;
+    margin: 0px;
+  }
+  .about-button a {
+    padding: 15px;
+    margin: 12px;
+    font-size: 1em;
+  }
+  .projects {
+    justify-content: flex-start;
+  }
+  .projects-menu p {
+    max-width: 200px;
   }
 }
