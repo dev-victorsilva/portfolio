@@ -151,22 +151,22 @@ main {
 .container-progress-wrapper {
     display: flex;
 }
-
-
-.container-progress {
-    flex: 1; 
-}
-
 .progress-content {
     padding: 20px;
+    height: 100%;
 }
-
-#content-one {
-    text-align: left; 
+#content-one p:hover {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
 }
-
+.progress-content h2 {
+    font-size: 2em;   
+}
 #content-two img {
     max-width: 100%; 
-    height: auto;
     display: block;
+    border-radius: 20px;
+    
 }
