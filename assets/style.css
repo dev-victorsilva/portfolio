@@ -5,6 +5,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   
 }
 
@@ -34,7 +35,10 @@
 /* CSS MAIN */
 
 body {  
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: linear-gradient(
     -60deg,
     #262626,
@@ -48,25 +52,60 @@ body {
 
 .container-principal {
     padding: 20px;
-    justify-content: center;
-    align-items: center;
     display: flex; 
-    max-width: 100%;
-    max-height: 100%; 
+    max-width: 95%;
+    max-height: 95%; 
+    background-color: #26262675;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px black
 }
 .container-usuario {
     align-content: center;
     min-width: 50%;
 }
+.container-usuario h1 {
+  padding-bottom: 30px;
+  font-size: 2em;
+  color: white;
+    
+}
+.container-usuario span {
+  color: rgba(255, 0, 0, 0.342);
+  font-size: 2.1em;
+}
+.container-usuario img { 
+    width: 150px;
+    border-radius: 100px;
+}
+
+.container-socials {
+  color: white;
+  padding: 10px;
+  text-align: center;;
+}
+
+.container-socials a {
+  color: white;
+}
+
+.container-socials i {
+  padding: 15px;
+}
+
+#socials-1:hover {
+  color: red;
+}
+#socials-2:hover {
+  color: red;
+}
+#socials-3:hover {
+  color: red;
+}
+
 .container-projetos {
     min-height: 70vh;
     max-width: 40vw;
     
-}
-
-.container-usuario img {
-    width: 200px;
-    border-radius: 200px;
 }
 
 .container-habilidades {
@@ -78,11 +117,14 @@ body {
 
 .habilidades-conteudo {
     padding-top: 20px;
-    width: 100%;
-    gap: 20px;
+    max-width: 100%;
+    gap: 15px;
     display: inline-flex;
     animation: slider 6s linear infinite;
 
+}
+.habilidades-conteudo:hover {
+  animation-play-state: paused;
 }
 .conteudo-projetos {
     padding: 20px;
