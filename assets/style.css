@@ -4,9 +4,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* KEYFRAMES */
@@ -23,13 +21,12 @@
 }
 
 @keyframes slider {
-    100% {
-        transform: translateX(-50%);
-    }
-    0% {
-        transform: translateX(0%);
-    }
-    
+  100% {
+    transform: translateX(-50%);
+  }
+  0% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes typing {
@@ -41,27 +38,20 @@
   }
 }
 
-@keyframes blink { 
+@keyframes blink {
   50% {
     border-color: transparent;
   }
-
-  
 }
-
 
 /* CSS MAIN */
 
-body {  
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(
-    -60deg,
-    #262626,
-    #0d0d0d
-  );
+  background: linear-gradient(-60deg, #262626, #0d0d0d);
   background-size: 400% 400%;
   animation: bg 5s ease infinite;
 }
@@ -69,24 +59,22 @@ body {
 /* CONTAINER PRINCIPAL */
 
 .container-principal {
-    padding: 20px;
-    display: flex; 
-    max-width: 95%;
-    max-height: 95%; 
-    background-color: #26262675;
-    border-radius: 20px;
-    box-shadow: 1px 1px 20px black
+  padding: 20px;
+  display: flex;
+  max-width: 95%;
+  max-height: 95%;
+  background-color: #26262675;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px black;
 }
 .container-usuario {
-    align-content: center;
-    min-width: 50%;
+  align-content: center;
+  min-width: 50%;
 }
 .container-usuario h1 {
   padding-bottom: 30px;
   font-size: 2em;
   color: white;
-
-    
 }
 .container-usuario span {
   display: inline-block;
@@ -98,15 +86,16 @@ body {
   border-right: 1px solid;
   animation: typing 2.8s steps(11, end) forwards, blink 0.7s step-end infinite;
 }
-.container-usuario img { 
-    width: 150px;
-    border-radius: 100px;
+
+.container-usuario img {
+  width: 150px;
+  border-radius: 100px;
 }
 
 .container-socials {
   color: white;
   padding: 10px;
-  text-align: center;;
+  text-align: center;
 }
 
 .container-socials a {
@@ -128,35 +117,33 @@ body {
 }
 
 .container-projetos {
-    min-height: 70vh;
-    max-width: 40vw;
-    
+  min-height: 70vh;
+  max-width: 40vw;
 }
 
 .container-habilidades {
-    align-content: center;
-    height: 100px;
-    width: 500px;
-    overflow: hidden;
+  align-content: center;
+  height: 100px;
+  width: 500px;
+  overflow: hidden;
 }
 
 .habilidades-conteudo {
-    padding-top: 20px;
-    max-width: 100%;
-    gap: 15px;
-    display: inline-flex;
-    animation: slider 6s linear infinite;
-
+  padding-top: 20px;
+  max-width: 100%;
+  gap: 15px;
+  display: inline-flex;
+  animation: slider 6s linear infinite;
 }
 .habilidades-conteudo:hover {
   animation-play-state: paused;
 }
 .conteudo-projetos {
-    padding: 20px;
+  padding: 20px;
 }
 .conteudo-projetos img {
-    width: 150px;
+  width: 150px;
 }
 .conteudo-projetos ul {
-    list-style-position: inside;
+  list-style-position: inside;
 }
