@@ -73,7 +73,7 @@ body {
 }
 .container-usuario h1 {
   padding-bottom: 30px;
-  font-size: 2em;
+  font-size: 3em;
   color: white;
 }
 .container-usuario span {
@@ -124,7 +124,7 @@ body {
 .container-habilidades {
   align-content: center;
   height: 100px;
-  width: 500px;
+  width: 600px;
   overflow: hidden;
 }
 
@@ -138,11 +138,30 @@ body {
 .habilidades-conteudo:hover {
   animation-play-state: paused;
 }
+.container-projetos h1 {
+  font-size: 1.5em;
+  color: white;
+
+}
+.container-projetos aside {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+
+}
+.container-projetos ul li {
+  color: white;
+}
+.container-projetos h2 {
+  color: rgba(255, 0, 0, 0.342);
+}
 .conteudo-projetos {
   padding: 20px;
 }
 .conteudo-projetos img {
-  width: 150px;
+  min-width: 600px;
+  max-width: 600px;
+  border-radius: 10px;
 }
 .conteudo-projetos ul {
   list-style-position: inside;
